@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <! --=========CREATE A NAV-BAR==========-- >
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="navbar">
+                <a href="#home" style="--clr:1" class="active">Home</a>
+                <a href="#about" style="--clr:2">About</a>
+                <a href="#portfolio" style="--clr:3">Projects</a>
+                <a href="#contact" style="--clr:4">Contact Us</a>
+            </nav>
+        </header>
+        <! --=========CREATE A HOME-SECTION========== -- >
+            <section class="home" id="home">
+                <div class="home-detail">
+                    <h3>Hello It's Me</h3>
+                    <h1>Syed Qadar Mohiuddin</h1>
+                    <h3>And I'm <span id="textline"></span></h3>
+                    <p>Hi, Myself Syed Qadar Mohiuddin, I'm passionate about creating scalable and innovative solutions using
+                        cutting-edge technologies.I'm always eager to learn and stay up-to-date with the latest
+                        developments in industry.If you're looking for a skilled developer who can bring your ideas to
+                        life, please feel free to get in touch. I'm always excited to collaborate and explore new
+                        opportunities</p>
+                    <div class="social-media">
+                        <a href="https://github.com/qadarsyed"><i class='bx bxl-github'></i></a>
+                    </div>
+                    <button class="btn"> Download Resume</button>
+                </div>
+                <div class="home-img">
+                </div>
+            </section>
+            <hr class="hredit">
+            <! --=========CREATE A About-SECTION==========--    >
+                <section class="about" id="about">
+                    <div class="about-img">
+                    </div>
+                    <div class="about-section">
+                        <h2 class="allheading">About <span>Me</span></h2>
+                        <p>Collaboration is an essential part of my development approach. I thrive in team environments where ideas are shared, and diverse perspectives come together to create outstanding software solutions. I'm an effective communicator and always strive to maintain a positive and collaborative atmosphere among teammates.</p>
+                            <p>I discovered my love for coding during my early years of education, and it has been an exciting journey ever since. I enjoy the process of transforming complex problems into elegant and functional software solutions. My goal is to create applications that not only meet the requirements but also provide a seamless user experience.</p>
+                            <p>In addition to my technical skills, I value clean and maintainable code. I follow best practices and pay attention to details to ensure the quality of my work. I enjoy solving challenging problems, and I'm not afraid to step out of my comfort zone to explore new areas and find creative solutions.</p>
+                        <a href="#" class="btn">Read More</a>
+                        </div>
+                </section>
+                <! --=========CREATE A Projects-SECTION==========--   >
+                  <hr class="hredit">
+                    <section class="portfolio" id="portfolio">
+                        <h2 class="allheading">Recent <span>Projects</span></h2>
+                        <div class="portfolio-section">
+                            <div class="portfolio-box">
+                                <img src="./Images/project1.png">
+                                <div class="portfolio-head">
+                                    <h4>Landing Page</h4>
+                                    <p>A landing page using html5,css3 and vanilla javascript.</p>
+                                    <a href=https://github.com/qadarsyed/landing-page><i
+                                            class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-box">
+                                <img src="./Images/project2.png">
+                                <div class="portfolio-head">
+                                    <h4>Temperature Converter</h4>
+                                    <p>A Converter with all standard conversion units.</p>
+                                    <a href="https://github.com/qadarsyed/Temperature-Converter"><i
+                                            class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr class="hredit">
+                    <! --=========CREATE A Contact-SECTION==========--    >
+                        <section class="contact" id="contact">
+                            <h2 class="allheading">Contact <span>Me</span></h2>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Full Name">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="input-box">
+                                    <input type="tel" placeholder="Mobile Number">
+                                    <input type="text" placeholder="Subject For">
+                                </div>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                <input type="submit" class="btn" value="Send Message">
+                            </form>
+                        </section>
+                        <! --=========CREATE A Footer-SECTION==========--   >
+                            <footer class="footer">
+                                <div class="text">
+                                    <p>Copyright@2023 by Syed Qadar Mohiuddin || All Right Reserved</p>
+                                </div>
+                                <div class="footerUp">
+                                    <a href="#"> <i class='bx bx-up-arrow-alt'></i> </a>
+                                </div>
+                            </footer>
+                            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                            <script>
+                                var typed = new Typed('#textline', {
+                                  strings: ['Software Developer','Full Stack Web Developer','Competetive Programmer','Data Analyst'],
+                                  typeSpeed: 100,
+                                  backSpeed: 100,
+                                  backDelay:1000,
+                                  loop:true
+                                });
+                              </script>
+                            <script src="./Javascript/index.js></script>
+</body>
+
+</html>
